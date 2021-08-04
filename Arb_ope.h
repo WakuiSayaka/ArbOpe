@@ -8,6 +8,7 @@
 
 ulong prec=256; //精度
 
+
 class Arb {
 	arb_t value; //private
 public:
