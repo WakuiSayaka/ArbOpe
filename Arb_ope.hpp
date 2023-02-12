@@ -87,7 +87,7 @@ public:
 
 	friend const Arb operator / (const Arb lhs,const Arb rhs) {
 		Arb res;
-    arb_div(res.value,lhs.value,rhs.value,prec);
+    	arb_div(res.value,lhs.value,rhs.value,prec);
 		return res;
 	}
 	friend const Arb operator / (const Arb lhs,const arb_t rhs) {
@@ -129,7 +129,7 @@ public:
 
 	friend const Arb operator + (const Arb lhs,const Arb rhs) {
 		Arb res;
-    arb_add(res.value,lhs.value,rhs.value,prec);
+    	arb_add(res.value,lhs.value,rhs.value,prec);
 		return res;
 	}
 	friend const Arb operator + (const Arb lhs,const arb_t rhs) {
@@ -171,7 +171,7 @@ public:
 
 	friend const Arb operator - (const Arb lhs,const Arb rhs) {
 		Arb res;
-    arb_sub(res.value,lhs.value,rhs.value,prec);
+    	arb_sub(res.value,lhs.value,rhs.value,prec);
 		return res;
 	}
 	friend const Arb operator - (const Arb lhs,const arb_t rhs) {
@@ -440,7 +440,7 @@ public:
 	/* 宣言時の処理 */
 	/* 無名関数? コンストラクタ?*/
 	/* 引数を指定した場合 Arb a(arb_t型の変数) のように初期値を入れられる。*/
-  Arb(void) { arb_init(this->value); }
+  	Arb(void) { arb_init(this->value); }
 
 	Arb(const arb_t obj) {
 		arb_init(this->value);
